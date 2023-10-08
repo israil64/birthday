@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+*::after::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 100%, rgba(22, 71, 109, 0.6846764828978467) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: #050801; */
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-size: cover;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    margin: 0 0;
+    position: absolute;
+    font: 16px Verdana;
+    color: #eee;
+    height: 25px;
+    top: calc(100vh - 30px);
+    text-shadow: 0 0 2px white;
+}
+
+#text {
+    text-align: center;
+    color: #fff;
+}
+
+p a {
+    text-decoration: none;
+    color: #aaa;
+}
+
+span {
+    font-size: 11px;
+}
+
+p > a:first-of-type {
+    font-size: 20px;
+}
+
+
+
+#container {
+    display: grid;
+    place-items: center;
+    margin: 24rem 0 0 .5em;
+}
+
+
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+}
+
+#Btn {
+    position: absolute;
+    bottom: 15rem;
+    left: 18rem;
+    font-size: 21px;
+    color: #fff;
+    padding: 5px 12px;
+    /* background-color: rgba(255, 255, 255, 0.387); */
+    border-radius: 5px;
+    box-shadow: 3px 4px 5px #000;
+    width: 120px;
+}
+
+#Btn.active {
+    display: none;
+}
+
+#Btn:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+#currentTime {
+    font-size: 35px;
+    position: absolute;
+    top: 1rem;
+
+}
+
+
+/* modern button */
